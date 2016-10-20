@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Martin G Scott'
 SITENAME = 'Rows and Columns'
-SITEURL = 'http://mgoycoolea.github.io'
+SITEURL = '' #Leave blank otherwise preview fails
 
 THEME = 'themes/nest'
 
@@ -27,9 +27,9 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Jinja2', 'http://jinja.pocoo.org/'),)
 
 # Social widget
-SOCIAL = (('LinkedIn', 'http://www.linkedin.com/in/goycoolea'),
-          ('Twitter', 'http://www.twitter.com/MartinGoycoolea'),
-          ('GitHub', 'http://www.github.com/mgoycoolea'),)
+SOCIAL = (('LinkedIn', 'http://www.linkedin.com/in/goycoolea/'),
+          ('Twitter', 'http://www.twitter.com/MartinGoycoolea/'),
+          ('GitHub', 'http://www.github.com/mgoycoolea/'))
 
 DEFAULT_PAGINATION = 10
 
@@ -44,11 +44,14 @@ PLUGINS = ['ipynb.markup']
 
 # NEST Template
 THEME = 'nest'
-SITESUBTITLE = u'My Awesome Blog'
+SITESUBTITLE = u'Rows and Columns: A Blog of Data and Opinions'
 # Minified CSS
 NEST_CSS_MINIFY = True
 # Add items to top menu before pages
-MENUITEMS = [('Homepage', '/'),('Categories','/categories.html')]
+MENUITEMS = [('Homepage', '/'),
+             ('Categories','/categories.html'),
+             ('Posts', '/posts.html'),
+             ('Useful Links', '/links.html'),]
 # Add header background image from content/images : 'background.jpg'
 NEST_HEADER_IMAGES = ''
 NEST_HEADER_LOGO = '/images/logo.png'
@@ -59,13 +62,13 @@ NEST_SITEMAP_ATOM_LINK = u'Atom Feed'
 NEST_SITEMAP_RSS_LINK = u'RSS Feed'
 NEST_SOCIAL_COLUMN_TITLE = u'Social'
 NEST_LINKS_COLUMN_TITLE = u'Links'
-NEST_COPYRIGHT = u'&copy; blogname 2015'
+NEST_COPYRIGHT = u'&copy; Rows and Columns 2016'
 # Footer optional
 NEST_FOOTER_HTML = ''
 # index.html
 NEST_INDEX_HEAD_TITLE = u'Homepage'
-NEST_INDEX_HEADER_TITLE = u'My Awesome Blog'
-NEST_INDEX_HEADER_SUBTITLE = u'Smashing The Stack For Fun And Profit'
+NEST_INDEX_HEADER_TITLE = u'Rows and Columns'
+NEST_INDEX_HEADER_SUBTITLE = u'Where Data Science Meets Opinions'
 NEST_INDEX_CONTENT_TITLE = u'Last Posts'
 # archives.html
 NEST_ARCHIVES_HEAD_TITLE = u'Archives'
