@@ -51,7 +51,7 @@ NEST_CSS_MINIFY = True
 MENUITEMS = [('Homepage', '/'),
              ('Categories','/categories.html'),
              ('Posts', '/posts.html'),
-             ('Useful Links', '/links.html'),]
+             ('Resources', '/resources.html'),]
 # Add header background image from content/images : 'background.jpg'
 NEST_HEADER_IMAGES = ''
 NEST_HEADER_LOGO = '/images/logo.png'
